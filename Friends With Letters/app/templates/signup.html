@@ -1,0 +1,32 @@
+<!-- The title of the ion-view will be shown on the navbar -->
+  <ion-view>
+    <!-- Modal header bar -->
+      <ion-header-bar class="bar-secondary">
+        <h1 class="title">Sign Up!</h1>
+        <button class="button button-positive" ng-click="exitSignUp()">Cancel</button>
+      </ion-header-bar>
+
+      <!-- Modal content area -->
+      <ion-content >
+        <form ng-submit = "addAccount(info)">
+          <label class="item item-input">
+            <span class="input-label">Username</span>
+            <input type="text"  ng-model="info.username">
+          </label>
+
+          <label class="item item-input">
+            <span class="input-label">Email</span>
+            <input type="email"  ng-model="info.email">
+          </label>
+
+          <label class="item item-input">
+            <span class="input-label">Password</span>
+            <input type="password"  ng-model="info.password">
+          </label>
+
+          <button class="button button-full button-positive">
+            Submit
+          </button>
+        </form>
+      </ion-content>
+    </ion-view>

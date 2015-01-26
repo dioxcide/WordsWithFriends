@@ -1,0 +1,19 @@
+<ion-view>
+	<ion-content>
+		<form ng-submit = "addAccount(info)">
+          <label class="item item-input">
+            <span class="input-label">Username</span>
+            <input type="text"  ng-model="info.user_email">
+          </label>
+
+          <label class="item item-input">
+            <span class="input-label">Password</span>
+            <input type="password"  ng-model="info.password">
+          </label>
+
+          <button class="button button-full button-positive">
+            Sign In
+          </button>
+        </form>
+	</ion-content>
+</ion-view>
